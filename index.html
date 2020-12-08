@@ -1,71 +1,108 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Purchase Form</title>
-    </head>
-    <body>
+  <head>
+    <title>Purchase Form</title>
+  </head>
+  <body>
+    <main>
+      <form
+        id="checkout_form"
+        action="#"
+        method="POST"
+        enctype="multipart/form-data"
+      >
+        <section>
+          <h2>Step 1: Your details</h2>
+          <div class="">
+            <label class="" for="fullname">Name</label>
+            <input
+              id="fullname"
+              name="firstnamelastname"
+              type="text"
+              placeholder="First and last name"
+            /><br />
+            <label class="" for="email">Email</label>
+            <input
+              id="email"
+              name="email"
+              type="text"
+              placeholder="example@domain.com"
+            /><br />
+            <label class="" for="phone">Phone</label>
+            <input
+              id="phone"
+              name="phone"
+              type="text"
+              placeholder="Eg. +447500000000"
+            />
+            <span id="name_validation" class="error_message"></span>
+          </div>
+        </section>
 
-        <main>
-        
-            <form id="checkout_form" action="#" method="POST" enctype="multipart/form-data">
-                <section>
-                    <h2>
-                        Step 1: Your details
-                    </h2>    
-                  <div class="">
-                      <label class="" for="fullname">Name</label>
-                      <input id="fullname" name="firstnamelastname" type="text" placeholder="First and last name"><br>
-                      <label class="" for="email">Email</label>
-                      <input id="email" name="email" type="text" placeholder="example@domain.com"><br>
-                      <label class="" for="phone">Phone</label>
-                      <input id="phone" name="phone" type="text" placeholder="Eg. +447500000000">
-                      <span id="name_validation" class="error_message"></span>
-                  </div>
-                </section>
-                    
-                <section>
-                    <h2>
-                        Step 2: Delivery address 
-                    </h2>
-                    <div class="">
-                        <label class="" for="address">Address</label><br>
-                        <textarea id="address" class="input" name="address" rows="7" cols="30"></textarea><br>
-                        <label class="" for="postcode">Post code</label>
-                        <input id="postcode" name="postcode" type="text"><br>
-                        <label class="" for="country">Country</label>
-                        <input id="country" name="country" type="text"><br>
-                        <span id="address_validation" class="error_message"></span>
-                    </div>    
-                </section>
-                <section>
-                    <h2>
-                        Step 3: Card details
-                    </h2>
-                    <div>
-                        <p>Card type</p>
-                        <input type="radio" id="visa" name="cardtype" value="visa">
-                        <label for="visa">Visa</label><br>
-                        <input type="radio" id="amex" name="cardtype" value="amex">
-                        <label for="amex">AmEx</label><br>
-                        <input type="radio" id="mastercard" name="cardtype" value="mastercard">
-                        <label for="mastercard">Mastercard</label>
-                    </div>
-                    <div>
-                        <label class="" for="cardnumber">Card number</label>
-                        <input id="cardnumber" name="cardnumber" type="text" maxlength="16"><br>
-                        <label class="" for="securitycode">Security code</label>
-                        <input id="securitycode" name="securitycode" type="text" maxlength="3"><br>
-                        <label class="" for="nameoncard">Name on card</label>
-                        <input id="nameoncard" name="nameoncard" type="text" placeholder="Exact name as on the card">
-                    </div>
-                    &nbsp;
-                    <div>
-                        <input type="submit" value="BUY IT" class="btn">
-                    </div>
-                </section>
-            </form>    
-
-        </main>
-
-    </body>
+        <section>
+          <h2>Step 2: Delivery address</h2>
+          <div class="">
+            <label class="" for="address">Address</label><br />
+            <textarea
+              id="address"
+              class="input"
+              name="address"
+              rows="7"
+              cols="30"
+            ></textarea
+            ><br />
+            <label class="" for="postcode">Post code</label>
+            <input id="postcode" name="postcode" type="text" /><br />
+            <label class="" for="country">Country</label>
+            <input id="country" name="country" type="text" /><br />
+            <span id="address_validation" class="error_message"></span>
+          </div>
+        </section>
+        <section>
+          <h2>Step 3: Card details</h2>
+          <div>
+            <p>Card type</p>
+            <input type="radio" id="visa" name="cardtype" value="visa" />
+            <label for="visa">Visa</label>
+            <input type="radio" id="amex" name="cardtype" value="amex" />
+            <label for="amex">AmEx</label>
+            <input
+              type="radio"
+              id="mastercard"
+              name="cardtype"
+              value="mastercard"
+            />
+            <label for="mastercard">Mastercard</label>
+          </div>
+          <div>
+            <label class="" for="cardnumber">Card number</label>
+            <input
+              id="cardnumber"
+              name="cardnumber"
+              type="text"
+              maxlength="16"
+            /><br />
+            <label class="" for="securitycode">Security code</label>
+            <input
+              id="securitycode"
+              name="securitycode"
+              type="text"
+              maxlength="3"
+            /><br />
+            <label class="" for="nameoncard">Name on card</label>
+            <input
+              id="nameoncard"
+              name="nameoncard"
+              type="text"
+              placeholder="Exact name as on the card"
+            />
+          </div>
+          &nbsp;
+          <div>
+            <input type="submit" value="BUY IT" class="btn" />
+          </div>
+        </section>
+      </form>
+    </main>
+  </body>
 </html>
