@@ -1,4 +1,4 @@
-body {
+/*body {
     font: 1rem/1.5 var(--bs-font-sans-serif);
 }
 
@@ -55,3 +55,42 @@ form.container {
 }
 
 */
+
+body {
+  background-color: #99cc33;
+  margin: 5px 350px;
+  padding: 20px 30px;
+}
+
+.container {
+  background-color: #cccc66;
+  border:1px solid white;
+  border-radius: 5%;
+  padding: 15px 5px;
+  margin: 5px 10px;
+  
+}
+
+input[type="text"] {
+  border: white;
+  border-radius: 10%;
+  padding: 10px 30px;
+  margin: -10px 80px;
+  font-style: italic;
+}
+
+html {
+  text-align: justify;
+}
+
+form {
+  padding: 10px;
+  margin: 10px;
+}
+
+.btn {
+border-radius: 40%;
+background-color:#333300;
+padding: 15px;
+margin: 5px;
+}
