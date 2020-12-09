@@ -2,22 +2,41 @@ body {
     font: 1rem/1.5 var(--bs-font-sans-serif);
 }
 
+form.container {
+  background-color: #99cc33;
+  margin: 25px 25px;
+  border-radius: 1%;
+  padding: 30px 25px;
 
+  }
+
+.form-control {
+  margin-top: 0px;
+
+}
+  
 .section {
   background-color: #99cc33;
 
 }
 
-div {
+.container2 {
   box-sizing: border-box;
-  width: 160px;
+  border-radius: 1%;
+  width: fill;
   height: 80px;
   padding: 20px;
   border: 2px solid #ccff99;
   background: #cccc66;
 }
 
+.container1 {
 
+
+
+}
+
+/*
 .row-mb-3 {
   box-sizing: border-box; 
   background-color: #cccc66;
@@ -35,3 +54,4 @@ div {
 
 }
 
+*/
