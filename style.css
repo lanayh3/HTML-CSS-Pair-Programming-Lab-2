@@ -49,48 +49,143 @@ form.container {
 
 }
 
-.input {
-  font-style:italic;
 
 }
 
 */
 
-body {
+
+
+Main {
   background-color: #99cc33;
-  margin: 5px 350px;
-  padding: 20px 30px;
+  border-radius: 5px;
+  min-width: 533px;
+  max-width: 533px;
 }
 
+
 .container {
-  background-color: #cccc66;
-  border:1px solid white;
-  border-radius: 5%;
+  border-radius: 5px;
   padding: 15px 5px;
   margin: 5px 10px;
+  min-width: 500px;
+  max-width: 500px;
   
 }
 
+
+div .border-box{
+  width: 160px;
+  height: 50px;
+  padding: 10px;
+  margin-top: -10px;
+  border: 2px solid white;
+  background: rgba(255, 255, 255, 0.5);
+}
+
+div .border-box2,
+    .border-box3{
+  
+  border: 2px solid white;
+  background: rgba(255, 255, 255, 0.5);
+}
+
+.border-box {
+  box-sizing: border-box;
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 5px;
+  padding: 15px 5px 20px 0px;
+  margin: -20px;
+  min-width: 500px;
+  max-width: 500px;
+  z-index: 5;
+}
+
+.border-box2 {
+  box-sizing: border-box2;
+  background-color: rgba(255, 255, 255, 0.5);
+  margin: -20px;
+  border-radius: 5px;
+  min-width: 500px;
+  max-width: 500px;
+}
+
+.border-box3 {
+  box-sizing: border-box2;
+  background-color: rgba(255, 255, 255, 0.5);
+  margin: -20px;
+  border-radius: 5px;
+  min-width: 500px;
+  max-width: 500px;
+}
+
+.fieldgroup{
+  float: left;
+  width: auto;
+  border: none;
+}
+
+.fieldset{
+  border-width: 0px;
+  border-style: none;
+  border: 50px;
+
+}
+
+
+
 input[type="text"] {
+  position: relative;
   border: white;
-  border-radius: 10%;
-  padding: 10px 30px;
-  margin: -10px 80px;
+  border-radius: 5px;
+  padding: 10px 30px 10px 5px;
+  margin: -20px 80px;
   font-style: italic;
+  
 }
 
 html {
-  text-align: justify;
+  text-align: left;
+  font-weight: bold;
 }
 
 form {
   padding: 10px;
   margin: 10px;
+  
 }
 
-.btn {
-border-radius: 40%;
-background-color:#333300;
-padding: 15px;
-margin: 5px;
+label {
+  text-align: left;
+  
+
+}
+
+button {
+border-radius: 40px;
+height: 50px;
+width:150px;
+background-color: rgba(29, 21, 21, .75);
+color: white;
+font-size:24px;
+font-family: 'Times New Roman', Times, serif;
+padding-top: 5px;
+padding-left: 20px;
+padding-right: 20px;
+margin-top:10px;
+margin-left:183.5px;
+}
+
+
+
+/*.content-box {
+  position: relative;
+  box-sizing: content-box;
+  background-color: white;
+  border-radius: 5px;
+  padding: 15px 5px 15px 0px;
+  margin: 0;
+  min-width: 500px;
+  max-width: 500px;
+  opacity: 100%;
 }

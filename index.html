@@ -6,77 +6,102 @@
       <link rel="stylesheet" href="style.css">  
       <title>Purchase Form</title>
     </head>
-    <body>
 
+    <body>
         <main>
               <form id="checkout_form" action="#" method="POST" enctype="multipart/form-data">
+
                 <section>
                   <div>
                     <h2> Step 1: Your details</h2>
+                      <div class="container">
+                        <div class="border-box">
+                          <label for="name">Name</label>
+                          <input class="form-control" type="text" placeholder="First and last name">
+                        </div>
+                      </div>
                     <div class="container">
-                    <label for="name">Name</label>
-                    <input class="form-control" type="text" placeholder="First and last name">
+                      <div class="border-box">
+                        <label for="name">Email</label>
+                        <input class="form-control" type="text" placeholder="example@domain.com">
+                      </div>
                     </div>
-                    <div class="container">
-                    <label for="name">Email</label>
-                    <input class="form-control" type="text" placeholder="example@domain.com">
-                    </div>
-                    <div class="container">
-                    <label for="name">Phone</label>
-                    <input class="form-control" type="text" placeholder="+47500000000">
+                      <div class="container">
+                        <div class="border-box">
+                        <label for="name">Phone</label>
+                        <input class="form-control" type="text" placeholder="Eg. +47500000000">
+                      </div>
                     </div>
                   </div>
-                  </section>
+                </section>
 
                 <section>
                   <h2>Step 2: Delivery address</h2>
-                  <div class="container">
-                  <label for="address">Address</label>
-                  <textarea name="address" cols="30" rows="7"></textarea>
-                  </div>
-                  <div class="container">
-                  <label for="postcode">Post code</label>
-                  <input class="form-control" type="text">
-                  </div>
-                  <div class="container">
-                  <label for="country">Country</label>
-                  <input class="form-control" type="text">
+                   <div class="container">
+                    <div class="border-box2">
+                      <label for="address">Address</label>
+                      <textarea name="address" cols="30" rows="7"></textarea>
                     </div>
+                    </div>
+                  <div class="container">
+                    <div class="border-box">
+                      <label for="postcode">Post code</label>
+                      <input class="form-control" type="text">
+                    </div>
+                  </div>
+                  <div class="container">
+                    <div class="border-box">
+                      <label for="country">Country</label>
+                      <input class="form-control" type="text">
+                    </div>
+                  </div>
                 </section>
 
                 <section>
                   <h2>Step 3: Card details</h2>
-                <div class="container">
-                  <p>Card type</p>
-                  <div>
-                    <input type="radio" id="cardtype" name="card" value="visa">
-                    <label for="cardtype">Visa</label>
-                  </div>
-                  <div>
-                    <input type="radio" id="cardtype" name="card" value="amex">
-                    <label for="cardtype">AmEx</label>
-                  </div>
-                  <div>
-                    <input type="radio" id="cardtype" name="card" value="mastercard">
-                    <label for="cardtype">Mastercard</label>
-                  </div>
-                </div>
+                    <div class="container">
+                      <div class="border-box3">
+                        <p>Card type</p>
+                        <fieldset id="cardtype">
+                          <div class="fieldgroup">
+                            <input type="radio" id="cardtype" name="card" value="visa">
+                            <label for="cardtype">Visa</label>
+                          </div>
+                          <div class="fieldgroup">
+                            <input type="radio" id="cardtype" name="card" value="amex">
+                            <label for="cardtype">AmEx</label>
+                          </div>
+                          <div class="fieldgroup">
+                            <input type="radio" id="cardtype" name="card" value="mastercard">
+                            <label for="cardtype">Mastercard</label>
+                          </div>
+                        </fieldset>
+                      </div>
+                    </div>
 
                   <div class="container">
-                    <label for="cardnumber">Card number</label>
-                    <input class="form-control" type="text">
+                    <div class="border-box">
+                      <label for="cardnumber">Card number</label>
+                      <input class="form-control" type="text">
+                    </div>
+                  </div>
+                    <div class="container">
+                      <div class="border-box">
+                        <label for="securitycode">Security code</label>
+                        <input class="form-control" type="text">
+                    </div>
                   </div>
                   <div class="container">
-                    <label for="securitycode">Security code</label>
-                    <input class="form-control" type="text">
-                  </div>
-                  <div class="container">
-                    <label for="nameoncard">Name on card</label>
-                    <input class="form-control" type="text" placeholder="Exact name as on the card">
+                    <div class="border-box">
+                      <label for="nameoncard">Name on card</label>
+                      <input class="form-control" type="text" placeholder="Exact name as on the card">
+                    </div>
                   </div>
                 </section>
-                <div>
-                  <button class="btn" type="submit">BUY IT</button>
+
+
+                <div class="button">
+                  <button type="submit">BUY IT!</button>
                 </div>
                 
                 
